@@ -16,11 +16,11 @@ public class PlayerMovement : MonoBehaviour{
         //use Time.deltaTime to keep even force regardless of FPS
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
-        if (Input.GetKey("l"))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey("j"))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
