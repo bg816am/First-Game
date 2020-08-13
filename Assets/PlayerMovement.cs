@@ -2,13 +2,13 @@
 
 public class PlayerMovement : MonoBehaviour{
 
+    //gives the player movement RigidBody a variable
     public Rigidbody rb;
 
-    // Start is called before the first frame update
-  
 
     // Update is called once per frame
-    void Update()
+    //FixedUpdate is used for physics updates
+    void FixedUpdate()
     {
         rb.AddForce(0, 0, 2000 * Time.deltaTime);
     }
